@@ -4,7 +4,7 @@ export default function CssAnimate() {
     return <>
 
         <div className="col-md-10 offset-md-1 col-sm-12">
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1"
+            <svg id="animation" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1"
                 viewBox="0 0 1200 864">
 
                 <g className="book">
@@ -49,7 +49,7 @@ export default function CssAnimate() {
                     <path
                         d="M230.28,713.33c-20.33,2.74-45.64,12.42-45.64,12.42,12.42-1.34,108.06-14.77,109.41-15.44,0,0-37.59-.51-63.76,3.02Z"
                         style={{ fill: '#beb4a5', strokeWidth: 0 }} />
-                    <path className="flip-page" 
+                    <path className="flip-page"
                         d="M778.91,632.11c52.22,6.93,95.01,10.57,129.21,12.06l78.87-72.47c-75.18,29.53-108.62,17.45-232.21,17.45s-151.44,94.33-155.76,110.76c.07.12.13.24.19.34,5.47-13.43,41.8-86.46,179.7-68.15Z"
                         style={{ fill: '#beb4a5', strokeWidth: 0 }} />
                 </g>
@@ -123,13 +123,13 @@ export default function CssAnimate() {
 
                 <text className="bio-text" transform="translate(303.29 411.88)"
                     style={{ fill: '#000', fontFamily: 'Ebrima, Ebrima', fontSize: 20 }}>
-                    <tspan x="0" y="0">I’m a design and web design specialist with 4 years of experience in </tspan>
-                    <tspan x="-24.77" y="27">marketing, user flows, wireframing, and website publishing. I’m
+                    <tspan className="text-line" x="0" y="0">I’m a design and web design specialist with 4 years of experience in </tspan>
+                    <tspan className="text-line" x="-24.77" y="27">marketing, user flows, wireframing, and website publishing. I’m
                         proficient </tspan>
-                    <tspan x="-5.4" y="54">in design and development tools like Figma, React, Adobe Suite, and </tspan>
-                    <tspan x="-29.26" y="81">advanced CSS, all of which I used to create this animation. For more
+                    <tspan className="text-line" x="-5.4" y="54">in design and development tools like Figma, React, Adobe Suite, and </tspan>
+                    <tspan className="text-line" x="-29.26" y="81">advanced CSS, all of which I used to create this animation. For more
                         of my </tspan>
-                    <tspan x="97.13" y="108">work, see my portfolio or contact me directly. </tspan>
+                    <tspan className="text-line" x="97.13" y="108">work, see my portfolio or contact me directly. </tspan>
                 </text>
 
                 <line className="name-divider" x1="269.93" y1="376.24" x2="930.07" y2="376.24"

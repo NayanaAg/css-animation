@@ -1,15 +1,158 @@
-.flip-page:hover {
-  transform: translateX(-5px) translateY(10px) rotateY(180deg);
-  transform-origin: bottom;
-  transition-duration: 500;
+#animation:hover {
+  .flip-page {
+    animation: page-turn ease-out;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+  }
+
+  .name-letter {
+    animation: bounce ease alternate infinite;
+    animation-duration: 5s;
+
+    &:nth-child(2) {
+      animation-delay: 0.01s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.02s;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 0.03s;
+    }
+
+    &:nth-child(5) {
+      animation-delay: 0.04s;
+    }
+
+    &:nth-child(6) {
+      animation-delay: 0.05s;
+    }
+
+    &:nth-child(7) {
+      animation-delay: 0.06s;
+    }
+
+    &:nth-child(8) {
+      animation-delay: 0.07s;
+    }
+
+    &:nth-child(9) {
+      animation-delay: 0.08s;
+    }
+
+    &:nth-child(10) {
+      animation-delay: 0.09s;
+    }
+
+    &:nth-child(11) {
+      animation-delay: 0.1s;
+    }
+
+    &:nth-child(12) {
+      animation-delay: 0.11s;
+    }
+
+    &:nth-child(13) {
+      animation-delay: 0.12s;
+    }
+  }
+
+  .text-line {
+    fill-opacity: 0%;
+    animation: text-appear;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+
+    &:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 2.5s;
+    }
+
+    &:nth-child(5) {
+      animation-delay: 3.5s;
+    }
+  }
 }
 
-@keyframes kaboom {
+.diamond {
+  animation: sparkle ease-in-out alternate infinite;
+  animation-duration: 4s;
+
+  &:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 0.5s;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 0.7s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+}
+
+
+
+@keyframes sparkle {
+  0% {
+    trasform: scale(1.0);
+    transform-origin: center;
+  }
+
+  50% {
+    transform: scale(1.01);
+    transform-origin: center;
+  }
+}
+
+@keyframes bounce {
   90% {
-    transform: scale(1.0);
+    transform: scaleY(1.0);
   }
 
   100% {
-    transform: scale(1.1);
+    transform: scaleY(1.1);
+  }
+}
+
+@keyframes page-turn {
+  20% {
+    transform: translateX(-100px);
+    transform-origin: bottom;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  100% {
+    transform: translateX(-100px);
+    transform-origin: bottom;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes text-appear {
+  0% {
+    fill-opacity: 0%;
+  }
+
+  100% {
+    fill-opacity: 100%;
   }
 }
