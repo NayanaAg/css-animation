@@ -1,4 +1,15 @@
 .flip-page:hover {
-  transform: rotate(-0.25turn);
+  transform: translateX(-5px) translateY(10px) rotateY(180deg);
   transform-origin: bottom;
+  transition-duration: 500;
+}
+
+@keyframes kaboom {
+  90% {
+    transform: scale(1.0);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
 }
